@@ -1,6 +1,3 @@
-#!/bin/bash
-
-# Check if the correct number of arguments was received
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <file_with_usernames> <username>"
     exit 1
@@ -9,13 +6,11 @@ fi
 file_with_usernames=$1
 username=$2
 
-# Check if the file exists and is a regular file
 if [ ! -f "$file_with_usernames" ]; then
     echo "Error: File $file_with_usernames does not exist or is not a regular file."
     exit 1
 fi
 
-# Check if the username exists in the file
 line_number=$(grep -n -x "$username" "$file_with_usernames" | cut -d ':' -f 1)
 
 if [ -n "$line_number" ]; then
