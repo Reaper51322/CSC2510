@@ -1,0 +1,8 @@
+System information has been gathered. Here’s the summary:
+Date and Time: 02/19/2024 18:03:18 CST
+User: alant
+Current working directory: /c/Users/alant/OneDrive - Tennessee Tech University/Documents/GitHub/CSC2510
+System usage:
+Disk usage:
+Filesystem            Size  Used Avail Use% Mounted on
+C:/Program Files/Git  933G  881G   53G  95% /
